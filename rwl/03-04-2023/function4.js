@@ -7,6 +7,8 @@ let obj={
     }
 }
 
+
+
 console.log(obj.name);
 console.log(obj.age);
 // console is object & log is methodm of that object
