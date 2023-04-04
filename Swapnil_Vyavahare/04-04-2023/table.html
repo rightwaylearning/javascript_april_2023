@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>This is table</title>
+</head>
+
+<body>
+    <h1>qualify student list</h1>
+    <div>
+        <table border="200">
+            <thead>
+                <tr>
+                    <th>Sr No</th>
+                    <th>First Name</th>
+                    <th>Last name</th>
+                    <th>Mob No</th>
+                </tr>
+            </thead>
+            <tbody>
+                <script>
+                    let data = [
+                        {
+                            SrNo: 1,
+                            fname: "Swapnil",
+                            lname: "Vyavahare",
+                            mob: 9834374656
+                        },
+                        {
+                            SrNo: 2,
+                            fname: "Rohan",
+                            lname: "Vyavahare",
+                            mob: 8834374656
+                        },
+                        {
+                            SrNo: 3,
+                            fname: "S",
+                            lname: "Vyavahare",
+                            mob: 8134374656
+                        },
+                    ]
+                    for (let i = 0; i < data.length; i++) {
+                        document.write("<tr>");
+                        document.write("<td>" + data[i].SrNo + "</td>");
+                        document.write("<td>" + data[i].fname + "</td>");
+                        document.write("<td>" + data[i].lname + "</td>");
+                        document.write("<td>" + data[i].mob + "</td>")
+                        document.write("</tr>");
+                    }
+                </script>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
