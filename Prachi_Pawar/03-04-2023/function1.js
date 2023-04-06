@@ -26,3 +26,11 @@ doSomething(p1,p2);
 
 //-----------------------------------------
 
+function foo(f) {
+    f();
+}
+
+function lazy(){
+    console.log("I am a lazy function");
+}
+foo(lazy);
