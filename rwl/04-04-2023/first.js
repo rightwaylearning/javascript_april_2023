@@ -23,16 +23,16 @@ for(let i = 0 ;i < obj.length ; i++){
 
 //----------------------------------------------------------------------------------
 
-let obj1 = [
-    "sukesh",
-    38,
-    "TN",
-    "south india"    
-];
-obj1['length'] = 35;
+// let obj1 = [
+//     "sukesh",
+//     38,
+//     "TN",
+//     "south india"    
+// ];
+// obj1['length'] = 35;
 
 
-console.log(obj1['length']); // 4
+// console.log(obj1['length']); // 4
 
 
 
