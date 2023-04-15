@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>term & condition button</title>
+</head>
+
+<body>
+
+    <input type="checkbox" name="check" id="id1">
+    <label for="id1">Accept Term & Condition</label>
+    <button disabled="disabled" id="id2">Submit</button>
+
+
+
+
+
+    <script>
+
+        document.getElementById("id1").addEventListener("change", function () {
+            let status = document.getElementById("id1").checked
+            if (status) {
+                document.getElementById("id2").disabled = ""
+            } else {
+                document.getElementById("id2").disabled = "disabled"
+            }
+        })
+
+    </script>
+
+</body>
+
+</html>
