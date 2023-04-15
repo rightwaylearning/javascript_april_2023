@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <input id="id1" type="text"><br>
+        <h1 id="id2">Print text here</h1>
+        <h1 id="id3">Print text here</h1>
+        <script>
+            document.getElementById("id1").addEventListener("keyup",function(){
+              let textData =  document.getElementById("id1").value;
+              document.getElementById("id2").innerHTML = textData;
+            })
+            document.getElementById("id1").addEventListener("keydown",function(){
+              let textData =  document.getElementById("id1").value;
+              document.getElementById("id3").innerHTML = textData;
+            })
+        </script>
+    </body>
+</html>
