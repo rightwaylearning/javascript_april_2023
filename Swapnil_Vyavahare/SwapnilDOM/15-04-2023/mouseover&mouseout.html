@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Mouseover & mouseout</title>
+</head>
+
+<body>
+
+   <div>
+    <img src="./ms1.webp" alt="img not loaded" title="MS DHONI" id="id1" height="250px" width="250px">
+   </div>
+
+
+
+
+
+    <script>
+        document.getElementById("id1").addEventListener("mouseover", function(){
+            document.getElementById("id1").setAttribute("src", "./virat.jpg")
+            document.getElementById("id1").setAttribute("title", "Virat Kohli")
+        })
+    </script>
+
+</body>
+
+</html>

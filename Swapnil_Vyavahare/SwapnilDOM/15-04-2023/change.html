@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>change</title>
+</head>
+
+<body>
+
+    <input type="text" name="textuser" id="id1">
+    <h1 id="id2">Print Text Here</h1>
+
+
+
+
+    <script>
+        document.getElementById("id1").addEventListener("change", function () {
+            let data = document.getElementById("id1").value
+            document.getElementById("id2").innerHTML = data
+
+        })
+
+
+    </script>
+
+</body>
+
+</html>

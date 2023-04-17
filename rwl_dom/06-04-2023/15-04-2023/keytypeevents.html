@@ -3,6 +3,8 @@
         <input id="id1" type="text"><br>
         <h1 id="id2">Print text here</h1>
         <h1 id="id3">Print text here</h1>
+      
+        <button type="submit" id="id10" onclick="">date</button>
         <script>
             document.getElementById("id1").addEventListener("keyup",function(){
               let textData =  document.getElementById("id1").value;
@@ -12,6 +14,11 @@
               let textData =  document.getElementById("id1").value;
               document.getElementById("id3").innerHTML = textData;
             })
+
+            document.getElementById("id10").innerHTML=Date();
+
+
+           console.warn("Ho")
         </script>
     </body>
 </html>
