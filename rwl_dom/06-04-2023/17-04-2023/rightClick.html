@@ -7,13 +7,14 @@
             border: 5px solid black;
         }
     </style>
-    <body>
-        <div id="myDiv">
+    <body id="myDiv">
+        <div>
 
         </div>
          <script>
-             document.getElementById("myDiv").addEventListener("contextmenu",function(event){
-                console.log(event.pageX +", "+event.pageY);
+             window.addEventListener("contextmenu",function(event){
+                 alert("Sorry!!, You can't right click.");
+                 event.preventDefault();
              }); 
         </script>
     </body>
