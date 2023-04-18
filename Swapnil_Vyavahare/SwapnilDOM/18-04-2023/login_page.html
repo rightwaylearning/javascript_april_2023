@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>loginpage</title>
+</head>
+<body>
+
+
+    <div>
+        <h2>loginform</h2>
+        
+        USERNAME -<input type="text" name="" id="uname"><br>
+        PASSWORD -<input type="password" name="" id="pass"><br>
+        <input type="submit" name="" id="btn">
+        <span id="msg1" style="color: greenyellow;"></span>
+        <span id="msg2" style="color: red;"></span>
+
+    
+    </div>
+
+
+
+
+
+
+
+
+
+    <script>
+
+        document.getElementById('btn').addEventListener('click', function(event){
+            let username = document.getElementById('uname').value;
+            let password = document.getElementById('pass').value;
+
+            if (username=='admin' && password=="admin123") {
+                document.getElementById('msg1').innerHTML ='sucessfully login'
+                document.getElementById('msg2').innerHTML =''
+            } else {
+                document.getElementById('msg2').innerHTML ='invalid login'
+                document.getElementById('msg1').innerHTML =''
+            }
+        })
+
+
+    </script>
+    
+</body>
+</html>
