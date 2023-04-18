@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Calculator</title>
+</head>
+
+<body>
+    <div>
+        Enter Principal Amount : <input type="text" id="principal"><br>
+        Loan Tenure In Months : <input type="text" id="tenure"><br>
+        Monthly Intrest Rate: <input type="text" id="ROI"><br>
+
+        <h1 id="Monthly Emi"></h1><br>
+        <button id="id">Calculate EMI</button>
+    </div>
+
+    <script>
+
+        document.getElementById("id").addEventListener("click", function () {
+            let P = document.getElementById("principal").value;
+            let N = document.getElementById("tenure").value;
+            let R = document.getElementById("ROI").value;
+            R = R / 12 / 100
+
+            // console.log(R)
+
+            let MonthlyEMI = parseInt(P) * parseInt(N) * (1 + parseInt(R)) * parseInt(N) / [(1 + parseInt(R)) * parseInt(N) - 1]
+
+            //let MonthlyEMI = parseInt(P) +parseInt(N) +parseInt(R) 
+
+
+            document.getElementById("Monthly Emi").innerHTML = "EMI = " + MonthlyEMI;
+        });
+    </script>
+
+
+
+</body>
+
+</html>

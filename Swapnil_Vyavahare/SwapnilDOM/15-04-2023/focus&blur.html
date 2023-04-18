@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>focus & Blur</title>
+</head>
+<body>
+
+    <input type="text" name="textbox" id="id1">
+    <label for="id1" id="id2">Focus Out</label>
+
+
+
+
+
+
+    <script>
+        document.getElementById("id1").addEventListener("focus", function(){
+            document.getElementById("id2").innerHTML="focus in"
+        })
+        document.getElementById("id1").addEventListener("blur", function(){
+            document.getElementById("id2").innerHTML="focus out"
+        })
+
+    </script>
+    
+</body>
+</html>

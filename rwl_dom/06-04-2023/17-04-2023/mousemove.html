@@ -1,0 +1,20 @@
+<html>
+    <style>
+        #myDiv{
+            width: 300px;
+            height: 500px;
+            background-color: crimson;
+            border: 5px solid black;
+        }
+    </style>
+    <body>
+        <div id="myDiv">
+
+        </div>
+         <script>
+             document.getElementById("myDiv").addEventListener("mousemove",function(event){
+                console.log(event.pageX +", "+event.pageY);
+             }); 
+        </script>
+    </body>
+</html>

@@ -12,7 +12,10 @@ let obj = {
     },{
         name: "Kirti",
         age:26,
+
     }]
-} 
+     = function(i){
+        console.log(i);
+} }
 
 

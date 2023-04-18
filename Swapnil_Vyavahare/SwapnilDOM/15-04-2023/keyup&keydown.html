@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>key up & down</title>
+</head>
+<body>
+
+    
+    <label for="id1" id="id-1">Enter text here</label><br><br>
+    <label for="id1" id="id-2">Enter text here</label><br><br>
+    <input type="text" name="inp" id="id1"><br>
+
+
+
+
+    <script>
+        document.getElementById("id1").addEventListener("keyup", function(){
+            let data=document.getElementById("id1").value
+            document.getElementById("id-1").innerHTML=data
+        })
+
+        document.getElementById("id1").addEventListener("keydown", function(){
+            let data1=document.getElementById("id1").value
+            document.getElementById("id-2").innerHTML=data1
+        })
+
+    </script>
+    
+</body>
+</html>
