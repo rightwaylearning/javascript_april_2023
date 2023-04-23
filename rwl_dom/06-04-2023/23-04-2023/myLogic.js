@@ -5,6 +5,7 @@ document.getElementById("bt1").addEventListener("click",function(){
     if(msg.length == 0){
         alert("Please !! enter some message");
     }else{
+        
         let str = location.href;
         if(str.includes("first")){
             document.getElementById("id1").innerHTML = msg;
