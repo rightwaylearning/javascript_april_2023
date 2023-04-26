@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sum</title>
+</head>
+
+<body>
+
+    <div>
+        Enter First Number: <input type="text" name="" id="num1">
+        Enter Second Number : <input type="text" name="" id="num2">
+        <h1 id="ans"></h1><br>
+        <button id="id">Calculate sum</button>
+    </div>
+
+    <script>
+        document.getElementById("id").addEventListener("click", function () {
+            let n1 = document.getElementById("num1").value;
+            let n2 = document.getElementById("num2").value;
+            let add = parseInt(n1) + parseInt(n2);
+            document.getElementById("ans").innerHTML = "sum = " + add
+
+        })
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

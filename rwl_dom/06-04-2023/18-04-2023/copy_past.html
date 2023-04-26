@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <div>
+            <h1>Cut,Copy,Past Example</h1>
+
+            <input type="text">
+
+        </div>
+
+        <script>
+                function dontDo(event){
+                  alert("Sorry!!, You can't do "+event.type+" operation.");
+                  event.preventDefault();
+                }
+                window.addEventListener("cut",dontDo);
+                window.addEventListener("copy",dontDo);
+                window.addEventListener("paste",dontDo);
+
+        </script>
+    </body>
+</html>

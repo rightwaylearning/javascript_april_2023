@@ -1,0 +1,45 @@
+<html>
+    <body>
+
+        <h3>Drop Drown List</h3>
+        <select id="drp">
+            <option value="IN">India</option>
+            <option value="PK">Pakistan</option>
+            <option value="CH">China</option>
+        </select>
+        <h2 id="selectedOption"></h2>
+        <div>
+            <h3>Please select product</h3>
+            <input type="checkbox" id="c1" value="PEN"> Pen <br>
+            <input type="checkbox" id="c2" value="Notebook"> Notebook <br>
+            <input type="checkbox" value="Book"> Book <br>
+            <input type="checkbox" value="Paper"> Paper <br>
+        </div>
+         <script>
+
+            document.getElementById("drp").addEventListener("change",function(event){
+             
+               document.getElementById("selectedOption").innerHTML = document.getElementById("drp").value;
+
+            });
+            let List =[];
+            
+            document.getElementById("c1").addEventListener("change",function(){
+              if(document.getElementById("c1").checked){
+                  List.push("PEN");
+               }else{
+                List.pop("PEN");
+               }
+               console.log(List);
+            });
+            document.getElementById("c2").addEventListener("change",function(){
+              if(document.getElementById("c2").checked){
+                  List.push("Notebook");
+               }else{
+                List.pop("Notebook");
+               }
+               console.log(List);
+            })
+        </script>
+    </body>
+</html>

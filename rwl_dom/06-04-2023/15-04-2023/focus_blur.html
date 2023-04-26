@@ -1,0 +1,14 @@
+<html>
+    <body>
+         <input type="text" id="id1">
+         <h1 id="id2">focus out</h1>
+        <script>
+            document.getElementById("id1").addEventListener("focus",function(){
+                 document.getElementById("id2").innerHTML = "focus in";
+            });
+            document.getElementById("id1").addEventListener("blur",function(){
+                document.getElementById("id2").innerHTML = "focus out";
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+<body>
+    <div>
+        <h2>Login page</h2>
+       
+            User name <input type="text" id="uname"><br><br>
+            Password  <input type="password" id="pass"><br><br>
+            <input type="submit" value="Login" id="btn"><br>
+            <span style="color: green;" id="success"></span>
+            <span style="color: red;" id="fail"></span>
+    
+        <script>
+            document.getElementById("btn").addEventListener("click",function(event){
+                let userName = document.getElementById("uname").value;
+                let pwd = document.getElementById("pass").value;
+
+                if(userName == "admin" && pwd == "admin@123"){
+                    document.getElementById("fail").innerHTML = "";
+                    document.getElementById("success").innerHTML = "Succcessfully Login";
+                }else{
+                    document.getElementById("success").innerHTML ="";
+                    document.getElementById("fail").innerHTML = "Invalid user name or password";
+                }
+            });
+        </script>
+    </div>
+</body>
+</html>
